@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Мудрый мексиканец</string>
+    <string-array name="Themes">
+        <item>Все темы</item>
+        <item>Музыка</item>
+        <item>Автомобили</item>
+    </string-array>
+</resources>
