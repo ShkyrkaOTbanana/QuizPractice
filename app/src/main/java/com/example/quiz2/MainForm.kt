@@ -30,7 +30,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class MainForm : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class MainForm : AppCompatActivity() {
 
     private var isAdmin: Boolean = false
 
@@ -131,17 +131,6 @@ class MainForm : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             }
         }
 
-        val spinner = findViewById<Spinner>(R.id.theme_spinner)
-        val arrayAdapter = ArrayAdapter.createFromResource(
-            this,
-            R.array.Themes,
-            android.R.layout.simple_spinner_item
-        )
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
-        spinner.adapter = arrayAdapter
-        spinner.onItemSelectedListener = this
-
-
         val doQuiz = findViewById<Button>(R.id.doQuiz)
         val newQuiz = findViewById<ImageView>(R.id.new_quiz)
         val editQuiz = findViewById<ImageView>(R.id.editQuiz)
@@ -226,22 +215,14 @@ class MainForm : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     private fun updateUI(){
         if(isAdmin){
-            hideNewQuiz.visibility = View.GONE
-            hideEditQuiz.visibility = View.GONE
-            hideDeleteQuiz.visibility = View.GONE
-        } else{
             hideNewQuiz.visibility = View.VISIBLE
             hideEditQuiz.visibility = View.VISIBLE
             hideDeleteQuiz.visibility = View.VISIBLE
+        } else{
+            hideNewQuiz.visibility = View.GONE
+            hideEditQuiz.visibility = View.GONE
+            hideDeleteQuiz.visibility = View.GONE
         }
-    }
-
-    override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val text = adapterView?.getItemAtPosition(position).toString()
-    }
-
-    override fun onNothingSelected(adapterView: AdapterView<*>?) {
-        TODO("Not yet implemented")
     }
 
     @SuppressLint("Range")

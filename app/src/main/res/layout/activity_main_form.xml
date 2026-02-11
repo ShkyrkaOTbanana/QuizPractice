@@ -88,17 +88,6 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/theme_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/spinner_bg"
-        android:dropDownSelector="@drawable/spinner_bg"
-        android:popupBackground="@drawable/spinner_bg" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"

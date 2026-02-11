@@ -5,17 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#371B58"
+    android:orientation="vertical"
     tools:context=".RegActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="153dp"
         android:layout_height="153dp"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:src="@drawable/me" />
+        android:layout_marginTop="30dp"
+        android:src="@drawable/me4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,17 +24,17 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/rubik_mono_one"
         android:text="Создайте аккаунт"
-        android:textColor="#FDFDFD"
+        android:textColor="#FFF8F8"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
-        android:background="@drawable/edit_design"
         android:id="@+id/user_login"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
+        android:background="@drawable/edit_design"
         android:ems="10"
         android:hint="login"
         android:inputType="text"
@@ -43,30 +43,30 @@
         android:textColorHint="#AAAAAA" />
 
     <EditText
-        android:background="@drawable/edit_design"
         android:id="@+id/user_email"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:background="@drawable/edit_design"
         android:ems="10"
         android:hint="email"
-        android:textAlignment="center"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
         android:textColor="#FDFDFD"
         android:textColorHint="#AAAAAA" />
 
     <EditText
-        android:background="@drawable/edit_design"
         android:id="@+id/user_password"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:background="@drawable/edit_design"
         android:ems="10"
         android:hint="password"
-        android:textAlignment="center"
         android:inputType="textPassword"
+        android:textAlignment="center"
         android:textColor="#FDFDFD"
         android:textColorHint="#AAAAAA" />
 

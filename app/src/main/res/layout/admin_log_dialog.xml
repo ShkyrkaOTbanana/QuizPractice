@@ -18,8 +18,8 @@
             android:layout_height="140dp"
             android:layout_marginStart="1dp"
             android:layout_marginEnd="1dp"
-            android:background="#4C3575"
-            app:cardBackgroundColor="#4C3575"
+            android:background="#FFFFFF"
+            app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="16dp">
 
 
@@ -31,10 +31,10 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
                     android:text="Адмиская учётная запись"
-                    android:textColor="#B6A7E0"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
             </RelativeLayout>
@@ -54,7 +54,7 @@
                     android:layout_marginTop="10dp"
                     android:text="Вы вошли в админскую учётную запись "
                     android:textAlignment="center"
-                    android:textColor="#B6A7E0" />
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/ok_back"
@@ -62,9 +62,9 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
-                    android:backgroundTint="#371B58"
+                    android:backgroundTint="#FFFFFF"
                     android:text="OK"
-                    android:textColor="#7858A6"
+                    android:textColor="#000000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
